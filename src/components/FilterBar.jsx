@@ -69,6 +69,16 @@ const FilterBar = ({
         ]}
       />
       <SelectField
+        label="문항 구분"
+        value={filters.examScope}
+        onChange={(value) => onFilterChange("examScope", value)}
+        allLabel="전체"
+        options={[
+          ["theory", "이론"],
+          ["past", "기출"],
+        ]}
+      />
+      <SelectField
         label="챕터"
         value={filters.chapter}
         onChange={(value) => onFilterChange("chapter", value)}

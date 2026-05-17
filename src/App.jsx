@@ -23,6 +23,7 @@ const initialFilters = {
   difficulty: "all",
   type: "all",
   mode: "all",
+  examScope: "all",
 };
 
 const App = () => {

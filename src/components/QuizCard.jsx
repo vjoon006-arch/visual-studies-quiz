@@ -1,5 +1,23 @@
 const choiceLetters = ["1", "2", "3", "4"];
 
+const getPastExamLabel = (question) => {
+  const examParts = [
+    question.examYear ? `${question.examYear}년` : null,
+    question.examRound,
+    question.examNumber ? `${question.examNumber}번` : null,
+  ].filter(Boolean);
+
+  if (examParts.length > 0) {
+    return `기출: ${examParts.join(" ")}`;
+  }
+
+  if (question.source) {
+    return `기출: ${question.source}`;
+  }
+
+  return question.isPastExam ? "기출문제" : "";
+};
+
 const getChoiceClassName = ({ isAnswered, isCorrectChoice, isWrongSelected }) => {
   if (isAnswered && isCorrectChoice) {
     return "border-teal-500 bg-teal-50 text-teal-950 ring-2 ring-teal-100";
@@ -34,6 +52,8 @@ const QuizCard = ({
   }
 
   const isCorrect = selectedAnswer === question.answer;
+  const choices = Array.isArray(question.choices) ? question.choices : [];
+  const pastExamLabel = getPastExamLabel(question);
 
   return (
     <section className="app-card p-4 sm:p-5" aria-label="현재 문제">
@@ -43,6 +63,7 @@ const QuizCard = ({
         </span>
         <span className="pill-label">{question.difficulty}</span>
         <span className="pill-label">{question.type}</span>
+        {pastExamLabel && <span className="pill-label">{pastExamLabel}</span>}
         {isAnswered && (
           <span
             className={`rounded-full px-2.5 py-1 text-xs font-extrabold ${
@@ -63,8 +84,23 @@ const QuizCard = ({
         {question.question}
       </h2>
 
+      {question.image && (
+        <figure className="mt-4">
+          <img
+            src={question.image}
+            alt={question.imageAlt || "문제 참고 이미지"}
+            className="block h-auto max-w-full rounded-lg border border-stone-200 bg-white shadow-soft"
+          />
+          {question.imageCaption && (
+            <figcaption className="mt-2 text-xs leading-5 text-slate-500">
+              {question.imageCaption}
+            </figcaption>
+          )}
+        </figure>
+      )}
+
       <div className="mt-5 space-y-2.5">
-        {question.choices.map((choice, index) => {
+        {choices.map((choice, index) => {
           const isCorrectChoice = index === question.answer;
           const isWrongSelected =
             selectedAnswer === index && selectedAnswer !== question.answer;

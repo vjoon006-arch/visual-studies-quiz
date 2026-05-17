@@ -10,6 +10,14 @@ export const filterQuestions = (questions, filters, progress) => {
   const search = normalize(filters.search);
 
   return questions.filter((question) => {
+    if (filters.examScope === "past" && question.isPastExam !== true) {
+      return false;
+    }
+
+    if (filters.examScope === "theory" && question.isPastExam === true) {
+      return false;
+    }
+
     if (filters.mode === "wrong" && !hasQuestionBeenWrong(question.id, progress)) {
       return false;
     }
@@ -48,6 +56,11 @@ export const filterQuestions = (questions, filters, progress) => {
       question.explanation,
       question.concept,
       question.memoryTip,
+      question.source,
+      question.examYear,
+      question.examRound,
+      question.examNumber,
+      question.imageCaption,
       ...(question.relatedConcepts ?? []),
       ...(question.tags ?? []),
     ]
