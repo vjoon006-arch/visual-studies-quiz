@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">가이드넘버 공식</title>
+  <desc id="desc">가이드넘버는 조리개값 곱하기 거리이고 조리개값은 가이드넘버 나누기 거리라는 공식과 예시 계산.</desc>
+  <rect width="720" height="360" fill="#f8fafc"/>
+  <text x="360" y="45" font-family="sans-serif" font-size="27" font-weight="700" fill="#111827" text-anchor="middle">가이드넘버 계산</text>
+  <rect x="70" y="80" width="580" height="92" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="360" y="118" font-family="sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="middle">GN = 조리개값 × 거리</text>
+  <text x="360" y="155" font-family="sans-serif" font-size="24" fill="#374151" text-anchor="middle">조리개값 = GN ÷ 거리</text>
+  <rect x="110" y="205" width="500" height="88" rx="8" fill="#eff6ff" stroke="#60a5fa"/>
+  <text x="360" y="242" font-family="sans-serif" font-size="24" font-weight="700" fill="#111827" text-anchor="middle">예: GN 45, 거리 2m</text>
+  <text x="360" y="276" font-family="sans-serif" font-size="26" fill="#1d4ed8" text-anchor="middle">45 ÷ 2 = 22.5 → f/22</text>
+  <text x="360" y="326" font-family="sans-serif" font-size="18" fill="#475569" text-anchor="middle">같은 ISO와 같은 거리 단위를 전제로 계산한다.</text>
+</svg>

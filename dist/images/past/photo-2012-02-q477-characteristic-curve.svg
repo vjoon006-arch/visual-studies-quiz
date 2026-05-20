@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" role="img" aria-labelledby="title desc">
+  <title id="title">필름 특성곡선과 콘트라스트</title>
+  <desc id="desc">노출량과 농도 축에 A, B, C, D 네 곡선이 있고 D의 직선부 기울기가 가장 가파르다.</desc>
+  <rect width="760" height="440" fill="#f8fafc"/>
+  <rect x="70" y="40" width="620" height="330" fill="#ffffff" stroke="#cbd5e1"/>
+  <line x1="100" y1="340" x2="660" y2="340" stroke="#111827" stroke-width="2"/>
+  <line x1="100" y1="340" x2="100" y2="75" stroke="#111827" stroke-width="2"/>
+  <path d="M660 340l-10 -6v12z" fill="#111827"/>
+  <path d="M100 75l-6 10h12z" fill="#111827"/>
+  <text x="635" y="392" font-family="sans-serif" font-size="23" fill="#111827" text-anchor="middle">노출량</text>
+  <text x="38" y="210" font-family="sans-serif" font-size="23" fill="#111827" text-anchor="middle" transform="rotate(-90 38 210)">농도</text>
+  <line x1="130" y1="285" x2="625" y2="285" stroke="#e5e7eb"/>
+  <line x1="130" y1="230" x2="625" y2="230" stroke="#e5e7eb"/>
+  <line x1="130" y1="175" x2="625" y2="175" stroke="#e5e7eb"/>
+  <line x1="130" y1="120" x2="625" y2="120" stroke="#e5e7eb"/>
+  <path d="M120 326 C190 318 245 293 310 255 C390 208 470 166 610 122" fill="none" stroke="#2563eb" stroke-width="5" stroke-linecap="round"/>
+  <path d="M120 327 C188 316 242 282 300 226 C372 157 440 111 600 87" fill="none" stroke="#059669" stroke-width="5" stroke-linecap="round"/>
+  <path d="M120 327 C190 322 260 304 340 273 C430 238 505 203 610 164" fill="none" stroke="#f59e0b" stroke-width="5" stroke-linecap="round"/>
+  <path d="M120 328 C205 318 285 270 335 205 C374 154 395 100 430 74 C480 62 540 57 610 54" fill="none" stroke="#dc2626" stroke-width="5" stroke-linecap="round"/>
+  <text x="624" y="125" font-family="sans-serif" font-size="24" font-weight="700" fill="#2563eb">A</text>
+  <text x="613" y="92" font-family="sans-serif" font-size="24" font-weight="700" fill="#059669">B</text>
+  <text x="624" y="171" font-family="sans-serif" font-size="24" font-weight="700" fill="#f59e0b">C</text>
+  <text x="625" y="62" font-family="sans-serif" font-size="24" font-weight="700" fill="#dc2626">D</text>
+  <text x="380" y="28" font-family="sans-serif" font-size="24" font-weight="700" fill="#111827" text-anchor="middle">직선부 기울기와 콘트라스트</text>
+  <text x="500" y="314" font-family="sans-serif" font-size="19" fill="#374151">기울기 큼 → 콘트라스트 높음</text>
+</svg>

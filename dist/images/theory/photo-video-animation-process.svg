@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 520" role="img" aria-labelledby="title desc">
+  <title id="title">애니메이션 제작 과정</title>
+  <desc id="desc">기획, 원화, 동화, 제록스, 잉킹과 트레이싱, 채색, 배경, 검사, 35mm 촬영, 네거티브, 필름 편집, 더빙으로 이어지는 단순 제작 흐름도.</desc>
+  <rect width="980" height="520" fill="#f8fafc"/>
+  <text x="490" y="42" font-family="sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="middle">애니메이션 제작 과정</text>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#475569"/>
+    </marker>
+    <style>
+      .box { fill:#ffffff; stroke:#94a3b8; stroke-width:2; rx:8; }
+      .text { font-family:sans-serif; font-size:20px; font-weight:700; fill:#111827; text-anchor:middle; dominant-baseline:middle; }
+      .arrow { stroke:#475569; stroke-width:2.5; fill:none; marker-end:url(#arrow); }
+      .label { font-family:sans-serif; font-size:16px; fill:#475569; text-anchor:middle; }
+    </style>
+  </defs>
+  <g transform="translate(45 85)">
+    <rect class="box" x="0" y="0" width="110" height="58"/>
+    <text class="text" x="55" y="30">기획</text>
+    <path class="arrow" d="M116 29 H158"/>
+    <rect class="box" x="165" y="0" width="110" height="58"/>
+    <text class="text" x="220" y="30">원화</text>
+    <path class="arrow" d="M281 29 H323"/>
+    <rect class="box" x="330" y="0" width="110" height="58"/>
+    <text class="text" x="385" y="30">동화</text>
+    <path class="arrow" d="M446 29 H488"/>
+    <rect class="box" x="495" y="0" width="110" height="58"/>
+    <text class="text" x="550" y="30">제록스</text>
+    <path class="arrow" d="M611 29 H653"/>
+    <rect class="box" x="660" y="0" width="180" height="58"/>
+    <text class="text" x="750" y="30">잉킹/트레이싱</text>
+  </g>
+  <path class="arrow" d="M885 114 C930 114 930 190 885 190"/>
+  <g transform="translate(45 160)">
+    <rect class="box" x="730" y="0" width="110" height="58"/>
+    <text class="text" x="785" y="30">채색</text>
+    <path class="arrow" d="M724 29 H682"/>
+    <rect class="box" x="565" y="0" width="110" height="58"/>
+    <text class="text" x="620" y="30">배경</text>
+    <path class="arrow" d="M559 29 H517"/>
+    <rect class="box" x="400" y="0" width="110" height="58"/>
+    <text class="text" x="455" y="30">검사</text>
+    <path class="arrow" d="M394 29 H352"/>
+    <rect class="box" x="205" y="0" width="140" height="58"/>
+    <text class="text" x="275" y="30">35mm 촬영</text>
+  </g>
+  <path class="arrow" d="M250 218 C205 218 205 294 250 294"/>
+  <g transform="translate(45 264)">
+    <rect class="box" x="205" y="0" width="140" height="58"/>
+    <text class="text" x="275" y="30">네거티브</text>
+    <path class="arrow" d="M352 29 H394"/>
+    <rect class="box" x="400" y="0" width="140" height="58"/>
+    <text class="text" x="470" y="30">필름 편집</text>
+    <path class="arrow" d="M547 29 H589"/>
+    <rect class="box" x="595" y="0" width="110" height="58"/>
+    <text class="text" x="650" y="30">더빙</text>
+  </g>
+  <text class="label" x="490" y="405">학습용 단순도식: 제작 현장과 시대에 따라 세부 공정은 달라질 수 있다.</text>
+  <text class="label" x="490" y="435">핵심 흐름은 작화 → 정리와 채색 → 촬영과 편집 → 음향 후반 작업이다.</text>
+</svg>

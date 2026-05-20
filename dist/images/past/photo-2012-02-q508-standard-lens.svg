@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+  <title id="title">표준렌즈와 화면 대각선</title>
+  <desc id="desc">사진 프레임의 대각선 길이가 표준렌즈 초점거리의 기준에 가깝다는 설명 도식.</desc>
+  <rect width="720" height="420" fill="#f8fafc"/>
+  <text x="360" y="42" font-family="sans-serif" font-size="26" font-weight="700" fill="#111827" text-anchor="middle">표준렌즈 기준</text>
+  <rect x="145" y="92" width="430" height="270" rx="4" fill="#ffffff" stroke="#111827" stroke-width="3"/>
+  <line x1="145" y1="362" x2="575" y2="92" stroke="#2563eb" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="145" cy="362" r="7" fill="#2563eb"/>
+  <circle cx="575" cy="92" r="7" fill="#2563eb"/>
+  <text x="413" y="210" font-family="sans-serif" font-size="23" font-weight="700" fill="#1d4ed8" text-anchor="middle" transform="rotate(-32 413 210)">화면 대각선</text>
+  <rect x="105" y="20" width="1" height="1" fill="none"/>
+  <text x="360" y="392" font-family="sans-serif" font-size="24" font-weight="700" fill="#111827" text-anchor="middle">표준렌즈 초점거리 ≈ 화면 대각선 길이</text>
+  <text x="360" y="72" font-family="sans-serif" font-size="18" fill="#475569" text-anchor="middle">포맷이 달라지면 표준 초점거리도 달라진다.</text>
+</svg>
